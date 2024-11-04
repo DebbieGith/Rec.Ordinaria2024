@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Dashboard\ControllerDashboard.cs" />
+    <Compile Include="Controller\Docentes\ControllerDocentes.cs" />
     <Compile Include="Controller\Estudiantes\ControllerEstudiante.cs" />
     <Compile Include="Model\Conexion\dbContext.cs" />
+    <Compile Include="Model\DAO\DAODocentes.cs" />
     <Compile Include="Model\DAO\DAOEstudiantes.cs" />
+    <Compile Include="Model\DTO\DTODocentes.cs" />
     <Compile Include="Model\DTO\DTOEstudiantes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +61,12 @@
     </Compile>
     <Compile Include="View\Dashboard\ViewDashboard.Designer.cs">
       <DependentUpon>ViewDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Docentes\ViewDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Docentes\ViewDocentes.Designer.cs">
+      <DependentUpon>ViewDocentes.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Estudiantes\ViewEstudiantes.cs">
       <SubType>Form</SubType>
@@ -77,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="View\Dashboard\ViewDashboard.resx">
       <DependentUpon>ViewDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Docentes\ViewDocentes.resx">
+      <DependentUpon>ViewDocentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Estudiantes\ViewEstudiantes.resx">
       <DependentUpon>ViewEstudiantes.cs</DependentUpon>

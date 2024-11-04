@@ -30,19 +30,19 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.probarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facultadesYEspecialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFondo = new System.Windows.Forms.Panel();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.probarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEstudiantes = new System.Windows.Forms.Button();
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAsignaturas = new System.Windows.Forms.Button();
             this.btnFacultades = new System.Windows.Forms.Button();
-            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelFondo.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -71,6 +71,12 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // probarConexiónToolStripMenuItem
+            // 
+            this.probarConexiónToolStripMenuItem.Name = "probarConexiónToolStripMenuItem";
+            this.probarConexiónToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.probarConexiónToolStripMenuItem.Text = "Probar conexión";
+            // 
             // estudiantesToolStripMenuItem
             // 
             this.estudiantesToolStripMenuItem.Name = "estudiantesToolStripMenuItem";
@@ -94,6 +100,13 @@
             this.facultadesYEspecialidadesToolStripMenuItem.Name = "facultadesYEspecialidadesToolStripMenuItem";
             this.facultadesYEspecialidadesToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
             this.facultadesYEspecialidadesToolStripMenuItem.Text = "Facultades y Especialidades";
+            // 
+            // cerrarFormularioToolStripMenuItem
+            // 
+            this.cerrarFormularioToolStripMenuItem.Image = global::Refuerzo2024.Properties.Resources.Close;
+            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
+            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
             // 
             // panelFondo
             // 
@@ -125,12 +138,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(208, 637);
             this.panelMenu.TabIndex = 0;
-            // 
-            // probarConexiónToolStripMenuItem
-            // 
-            this.probarConexiónToolStripMenuItem.Name = "probarConexiónToolStripMenuItem";
-            this.probarConexiónToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.probarConexiónToolStripMenuItem.Text = "Probar conexión";
             // 
             // btnEstudiantes
             // 
@@ -180,13 +187,6 @@
             this.btnFacultades.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFacultades.UseVisualStyleBackColor = true;
             // 
-            // cerrarFormularioToolStripMenuItem
-            // 
-            this.cerrarFormularioToolStripMenuItem.Image = global::Refuerzo2024.Properties.Resources.Close;
-            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
-            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
-            // 
             // ViewDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,6 +195,8 @@
             this.Controls.Add(this.panelFondo);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ViewDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Registro Académico";

@@ -1,5 +1,6 @@
 ﻿using Refuerzo2024.Model.Conexion;
 using Refuerzo2024.View.Dashboard;
+using Refuerzo2024.View.Docentes;
 using Refuerzo2024.View.Estudiantes;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Refuerzo2024.Controller.Dashboard
             this.object_Dashboard = vista;
             vista.probarConexiónToolStripMenuItem.Click += new EventHandler(ProbarConexion);
             vista.btnEstudiantes.Click += new EventHandler(AbrirFormEstudiantes);
+            vista.btnDocentes.Click += new EventHandler(AbrirFormularioDocentes);
         }
 
 
@@ -99,6 +101,11 @@ namespace Refuerzo2024.Controller.Dashboard
         public void AbrirFormEstudiantes(object sender, EventArgs e)
         {
             AbrirFormulario<ViewEstudiantes>();
+        }
+
+        public void AbrirFormularioDocentes(object sender, EventArgs e)
+        {
+            AbrirFormulario<ViewDocentes>();
         }
     }
 }
