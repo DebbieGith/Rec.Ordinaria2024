@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -40,9 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblDocentes = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btnBuscarDocente = new System.Windows.Forms.Button();
+            this.txtBuscarDocente = new System.Windows.Forms.TextBox();
+            this.lblDocente = new System.Windows.Forms.Label();
             this.dgvDocentes = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.TextBox();
@@ -84,7 +84,7 @@
             this.txtApellidos.Location = new System.Drawing.Point(12, 220);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(300, 20);
-            this.txtApellidos.TabIndex = 15;
+            this.txtApellidos.TabIndex = 2;
             this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
             // 
             // txtNombres
@@ -92,7 +92,7 @@
             this.txtNombres.Location = new System.Drawing.Point(12, 171);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(300, 20);
-            this.txtNombres.TabIndex = 13;
+            this.txtNombres.TabIndex = 1;
             this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
             // txtIDDocente
@@ -100,7 +100,7 @@
             this.txtIDDocente.Location = new System.Drawing.Point(12, 122);
             this.txtIDDocente.Name = "txtIDDocente";
             this.txtIDDocente.Size = new System.Drawing.Size(112, 20);
-            this.txtIDDocente.TabIndex = 12;
+            this.txtIDDocente.TabIndex = 0;
             this.txtIDDocente.TabStop = false;
             this.txtIDDocente.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
@@ -153,39 +153,39 @@
             this.button4.Text = "Nuevo registro";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // btnBuscar
+            // btnBuscarDocente
             // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.Location = new System.Drawing.Point(894, 94);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(144, 23);
-            this.btnBuscar.TabIndex = 34;
-            this.btnBuscar.Text = "Buscar Docente";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscarDocente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscarDocente.Location = new System.Drawing.Point(894, 94);
+            this.btnBuscarDocente.Name = "btnBuscarDocente";
+            this.btnBuscarDocente.Size = new System.Drawing.Size(144, 23);
+            this.btnBuscarDocente.TabIndex = 34;
+            this.btnBuscarDocente.Text = "Buscar Docentes";
+            this.btnBuscarDocente.UseVisualStyleBackColor = true;
             // 
-            // txtBuscar
+            // txtBuscarDocente
             // 
-            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtBuscarDocente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBuscar.Location = new System.Drawing.Point(413, 96);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(475, 20);
-            this.txtBuscar.TabIndex = 33;
+            this.txtBuscarDocente.Location = new System.Drawing.Point(413, 96);
+            this.txtBuscarDocente.Name = "txtBuscarDocente";
+            this.txtBuscarDocente.Size = new System.Drawing.Size(475, 20);
+            this.txtBuscarDocente.TabIndex = 33;
             // 
-            // label9
+            // lblDocente
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(346, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "Buscar:";
+            this.lblDocente.AutoSize = true;
+            this.lblDocente.Location = new System.Drawing.Point(346, 99);
+            this.lblDocente.Name = "lblDocente";
+            this.lblDocente.Size = new System.Drawing.Size(43, 13);
+            this.lblDocente.TabIndex = 35;
+            this.lblDocente.Text = "Buscar:";
             // 
             // dgvDocentes
             // 
             this.dgvDocentes.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dgvDocentes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dgvDocentes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDocentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDocentes.Location = new System.Drawing.Point(336, 123);
@@ -209,7 +209,7 @@
             this.txtDocumento.Location = new System.Drawing.Point(12, 268);
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(300, 20);
-            this.txtDocumento.TabIndex = 38;
+            this.txtDocumento.TabIndex = 3;
             // 
             // ViewDocentes
             // 
@@ -219,9 +219,9 @@
             this.Controls.Add(this.txtDocumento);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvDocentes);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnBuscarDocente);
+            this.Controls.Add(this.txtBuscarDocente);
+            this.Controls.Add(this.lblDocente);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lblDocentes);
             this.Controls.Add(this.btnEliminar);
@@ -256,9 +256,9 @@
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDocentes;
         public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button btnBuscar;
-        public System.Windows.Forms.TextBox txtBuscar;
-        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Button btnBuscarDocente;
+        public System.Windows.Forms.TextBox txtBuscarDocente;
+        public System.Windows.Forms.Label lblDocente;
         public System.Windows.Forms.DataGridView dgvDocentes;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtDocumento;
